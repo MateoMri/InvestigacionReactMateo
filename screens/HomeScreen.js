@@ -6,7 +6,8 @@ export default function HomeScreen({ navigation }) {
     <View style={styles.container}>
       <Text style={styles.title}>Módulo 3.5</Text>
       <Text style={styles.description}>
-        Desarrollo de componentes para dispositivos móviles.
+        Este módulo enseña a crear componentes reutilizables y funcionales en apps móviles con React Native,
+        trabajando navegación entre pantallas, props y buenas prácticas de desarrollo.
       </Text>
       <Button title="Ver Estudiante" onPress={() => navigation.navigate('Estudiante')} />
     </View>
@@ -15,6 +16,6 @@ export default function HomeScreen({ navigation }) {
 
 const styles = StyleSheet.create({
   container: { flex: 1, justifyContent: 'center', alignItems: 'center', padding: 20 },
-  title: { fontSize: 24, fontWeight: 'bold' },
-  description: { fontSize: 16, marginVertical: 10, textAlign: 'center' },
+  title: { fontSize: 24, fontWeight: 'bold', marginBottom: 10 },
+  description: { fontSize: 16, textAlign: 'center', marginBottom: 20 },
 });

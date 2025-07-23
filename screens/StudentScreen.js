@@ -4,18 +4,14 @@ import StudentCard from '../components/StudentCard';
 
 export default function StudentScreen({ navigation }) {
   const studentData = {
-    nombre: 'Mateo García',
-    edad: 20,
+    nombre: 'Mateo Amaya',
+    edad: 18,
     imagen: 'https://randomuser.me/api/portraits/men/75.jpg',
   };
 
   return (
     <View style={styles.container}>
-      <StudentCard
-        nombre={studentData.nombre}
-        edad={studentData.edad}
-        imagen={studentData.imagen}
-      />
+      <StudentCard {...studentData} />
       <Button title="Volver al Inicio" onPress={() => navigation.goBack()} />
     </View>
   );
